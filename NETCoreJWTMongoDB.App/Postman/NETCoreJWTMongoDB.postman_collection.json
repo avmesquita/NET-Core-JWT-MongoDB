@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "a8e71a39-a2f0-44e0-98ca-65137c233260",
+		"name": "NETCoreJWTMongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:6051/api/token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"userID\":\"usuario01\",\"accessKey\":\"94be650011cf412ca906fc335f615cdc\"}"
+				},
+				"url": {
+					"raw": "http://localhost:6051/api/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6051",
+					"path": [
+						"api",
+						"token"
+					]
+				},
+				"description": "jwt token validate"
+			},
+			"response": []
+		}
+	]
+}
